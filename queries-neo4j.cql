@@ -63,7 +63,11 @@ MATCH (u1 :Usuario) --> (p1 :Produto) <-- (u2 :Usuario) --> (p2 :Produto)
 WHERE
     u1.email = "user003@gmail.com"
     AND
+    NOT (u1) --> (p2)
+    AND
     u1.email <> u2.email
     AND
     p1.produto_id <> p2.produto_id
-RETURN u1, p1, u2, p2
+WITH p2
+ORDER BY p2.produto_id
+RETURN collect(DISTINCT(p2.produto_id))

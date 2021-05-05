@@ -20,3 +20,9 @@ os.environ['PYSPARK_SUBMIT_ARGS'] = '--packages graphframes:graphframes:0.8.1-sp
 ```
 
 Para quem deseja rodar seus serviços na AWS, o Neo4j Community Edition pode ser instalado gratuitamente (tirando o preço da máquina) numa instância EC2. O Spark GraphFrames pode ser naturalmente instalado num cluster EMR, para aproveitar a paralelização.
+
+## Artigo e outros conteúdos
+
+O artigo comentando este trabalho foi publicado no [blog da Neurolake](https://medium.com/neurolake/grafos-e-recomenda%C3%A7%C3%A3o-de-produtos-comparando-spark-graphframes-com-neo4j-ddef0ed1e720), do Medium, fique à vontade para conferir este e outros posts bem legais por lá.
+
+Publico outros textos também em meu blog pessoal, [guilherme.boaviagem.xyz](https://guilherme.boaviagem.xyz/).
